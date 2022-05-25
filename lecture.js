@@ -42,3 +42,11 @@ else
     jonSnowHealth -= (jamieLannisterAttack - jonSnowDefense)
     console.log(`Jon Snow's Health is down to ${jonSnowHealth}`);
 }
+
+//peseant throws Jon a med kit and he heals 50 health, his health cannot exceed 100
+healthKit = 50;
+jonSnowHealth += healthKit;
+if (jonSnowHealth > 100)
+{
+    jonSnowHealth = 100;
+}
